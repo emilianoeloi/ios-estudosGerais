@@ -9,10 +9,16 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBAction func submit(sender: AnyObject) {
+        print("Button Tapped")
+        label.text = textField.text
+    }
+    @IBOutlet weak var label: UILabel!
+    @IBOutlet weak var textField: UITextField!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        print("Vai Sabrina")
     }
 
     override func didReceiveMemoryWarning() {

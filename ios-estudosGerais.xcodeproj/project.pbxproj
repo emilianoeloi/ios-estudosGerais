@@ -14,6 +14,7 @@
 		CA19799E1C0D9FC400AEF4B9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA19799C1C0D9FC400AEF4B9 /* LaunchScreen.storyboard */; };
 		CA1979A91C0D9FC500AEF4B9 /* ios_estudosGeraisTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1979A81C0D9FC500AEF4B9 /* ios_estudosGeraisTests.swift */; };
 		CA1979B41C0D9FC500AEF4B9 /* ios_estudosGeraisUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1979B31C0D9FC500AEF4B9 /* ios_estudosGeraisUITests.swift */; };
+		CA1979C21C0DA0F300AEF4B9 /* cat.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CA1979C11C0DA0F300AEF4B9 /* cat.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		CA1979AF1C0D9FC500AEF4B9 /* ios-estudosGeraisUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ios-estudosGeraisUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA1979B31C0D9FC500AEF4B9 /* ios_estudosGeraisUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ios_estudosGeraisUITests.swift; sourceTree = "<group>"; };
 		CA1979B51C0D9FC500AEF4B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA1979C11C0DA0F300AEF4B9 /* cat.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cat.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 		CA1979921C0D9FC400AEF4B9 /* ios-estudosGerais */ = {
 			isa = PBXGroup;
 			children = (
+				CA1979C11C0DA0F300AEF4B9 /* cat.jpg */,
 				CA1979931C0D9FC400AEF4B9 /* AppDelegate.swift */,
 				CA1979951C0D9FC400AEF4B9 /* ViewController.swift */,
 				CA1979971C0D9FC400AEF4B9 /* Main.storyboard */,
@@ -231,6 +234,7 @@
 			files = (
 				CA19799E1C0D9FC400AEF4B9 /* LaunchScreen.storyboard in Resources */,
 				CA19799B1C0D9FC400AEF4B9 /* Assets.xcassets in Resources */,
+				CA1979C21C0DA0F300AEF4B9 /* cat.jpg in Resources */,
 				CA1979991C0D9FC400AEF4B9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
