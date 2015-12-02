@@ -16,6 +16,7 @@
 		CA1979B41C0D9FC500AEF4B9 /* ios_estudosGeraisUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1979B31C0D9FC500AEF4B9 /* ios_estudosGeraisUITests.swift */; };
 		CA1979C21C0DA0F300AEF4B9 /* cat.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CA1979C11C0DA0F300AEF4B9 /* cat.jpg */; };
 		CA1979C41C0DA6B000AEF4B9 /* DoisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1979C31C0DA6B000AEF4B9 /* DoisViewController.swift */; };
+		CA745BA31C0EFBDE0003F44A /* TresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA745BA21C0EFBDE0003F44A /* TresViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		CA1979B51C0D9FC500AEF4B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CA1979C11C0DA0F300AEF4B9 /* cat.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cat.jpg; sourceTree = "<group>"; };
 		CA1979C31C0DA6B000AEF4B9 /* DoisViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoisViewController.swift; sourceTree = "<group>"; };
+		CA745BA21C0EFBDE0003F44A /* TresViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TresViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				CA19799C1C0D9FC400AEF4B9 /* LaunchScreen.storyboard */,
 				CA19799F1C0D9FC400AEF4B9 /* Info.plist */,
 				CA1979C31C0DA6B000AEF4B9 /* DoisViewController.swift */,
+				CA745BA21C0EFBDE0003F44A /* TresViewController.swift */,
 			);
 			path = "ios-estudosGerais";
 			sourceTree = "<group>";
@@ -263,6 +266,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA745BA31C0EFBDE0003F44A /* TresViewController.swift in Sources */,
 				CA1979961C0D9FC400AEF4B9 /* ViewController.swift in Sources */,
 				CA1979941C0D9FC400AEF4B9 /* AppDelegate.swift in Sources */,
 				CA1979C41C0DA6B000AEF4B9 /* DoisViewController.swift in Sources */,
@@ -492,6 +496,7 @@
 				CA1979BA1C0D9FC500AEF4B9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CA1979BB1C0D9FC500AEF4B9 /* Build configuration list for PBXNativeTarget "ios-estudosGeraisTests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +505,7 @@
 				CA1979BD1C0D9FC500AEF4B9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CA1979BE1C0D9FC500AEF4B9 /* Build configuration list for PBXNativeTarget "ios-estudosGeraisUITests" */ = {
 			isa = XCConfigurationList;
@@ -508,6 +514,7 @@
 				CA1979C01C0D9FC500AEF4B9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
