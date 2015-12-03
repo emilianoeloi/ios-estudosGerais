@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="zyD-cq-cTl">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="XMA-iq-9Tq">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
@@ -165,6 +165,65 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5jO-it-dyq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="137" y="1596"/>
+        </scene>
+        <!--Quatro View Controller-->
+        <scene sceneID="FEb-Sp-DeH">
+            <objects>
+                <viewController id="XMA-iq-9Tq" customClass="QuatroViewController" customModule="ios_estudosGerais" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="yvN-s5-A9a"/>
+                        <viewControllerLayoutGuide type="bottom" id="4h8-RZ-ZER"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zIg-V8-KqF">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ysk-P0-b2d">
+                                <rect key="frame" x="41" y="91" width="234" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u8P-IY-y7w">
+                                <rect key="frame" x="130" y="159" width="61" height="30"/>
+                                <state key="normal" title="Verifique"/>
+                                <connections>
+                                    <action selector="verify:" destination="XMA-iq-9Tq" eventType="touchUpInside" id="eXs-sv-yB6"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Resultado" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VJO-27-m3G">
+                                <rect key="frame" x="102" y="226" width="141" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Número Primo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sZz-a1-A3U">
+                                <rect key="frame" x="117" y="28" width="110" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="u8P-IY-y7w" firstAttribute="top" secondItem="ysk-P0-b2d" secondAttribute="bottom" constant="38" id="0wG-c2-8fF"/>
+                            <constraint firstItem="VJO-27-m3G" firstAttribute="centerX" secondItem="u8P-IY-y7w" secondAttribute="centerX" id="8Ia-aY-aor"/>
+                            <constraint firstItem="VJO-27-m3G" firstAttribute="top" secondItem="u8P-IY-y7w" secondAttribute="bottom" constant="37" id="H3B-O8-O3b"/>
+                            <constraint firstItem="ysk-P0-b2d" firstAttribute="top" secondItem="sZz-a1-A3U" secondAttribute="bottom" constant="42" id="P2T-vr-wgd"/>
+                            <constraint firstItem="u8P-IY-y7w" firstAttribute="centerX" secondItem="ysk-P0-b2d" secondAttribute="centerX" id="dBP-DL-PJA"/>
+                            <constraint firstItem="sZz-a1-A3U" firstAttribute="centerX" secondItem="zIg-V8-KqF" secondAttribute="centerX" id="lfR-Tk-KQ1"/>
+                            <constraint firstItem="ysk-P0-b2d" firstAttribute="centerX" secondItem="sZz-a1-A3U" secondAttribute="centerX" id="lvr-vE-npz"/>
+                            <constraint firstItem="sZz-a1-A3U" firstAttribute="top" secondItem="yvN-s5-A9a" secondAttribute="bottom" constant="8" id="yn0-Cr-OBm"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="number" destination="ysk-P0-b2d" id="qBX-Cy-kOV"/>
+                        <outlet property="resultado" destination="VJO-27-m3G" id="KyL-Rv-BmJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wei-ia-8iT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137" y="2226"/>
         </scene>
     </scenes>
     <resources>

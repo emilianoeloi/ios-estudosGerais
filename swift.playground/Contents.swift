@@ -3,7 +3,7 @@
 import UIKit
 
 var str = "Vai Sabrina"
-var number = 1
+var number = 997
 var floatNumber = 1.0
 var matrix = [1,2,3,4,5]
 var dicionario = ["key":"value"]
@@ -13,6 +13,17 @@ var currentAge = 8
 var name = "Gabriela"
 var mom = "Rhyana"
 var momHumor = "bom"
+
+var isPrime = true
+
+if number > 2{
+    for (var i = 2; i < number; i++){
+        if (number % i == 0){
+            isPrime = false;
+        }
+    }
+}
+print(" The number \(number) is prime: \(isPrime)")
 
 if currentAge >= minimalAge || (mom == "Rhyana" && momHumor == "bom")  {
     print("Hi \(name) You can play")
