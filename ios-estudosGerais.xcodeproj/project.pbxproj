@@ -19,6 +19,7 @@
 		CA1979C21C0DA0F300AEF4B9 /* cat.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CA1979C11C0DA0F300AEF4B9 /* cat.jpg */; };
 		CA1979C41C0DA6B000AEF4B9 /* DoisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1979C31C0DA6B000AEF4B9 /* DoisViewController.swift */; };
 		CA306BDA1C2A9F49006CA09D /* SeisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA306BD91C2A9F49006CA09D /* SeisViewController.swift */; };
+		CA306BDC1C2AA451006CA09D /* SeteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA306BDB1C2AA451006CA09D /* SeteViewController.swift */; };
 		CA745BA31C0EFBDE0003F44A /* TresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA745BA21C0EFBDE0003F44A /* TresViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +59,7 @@
 		CA1979C11C0DA0F300AEF4B9 /* cat.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cat.jpg; sourceTree = "<group>"; };
 		CA1979C31C0DA6B000AEF4B9 /* DoisViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoisViewController.swift; sourceTree = "<group>"; };
 		CA306BD91C2A9F49006CA09D /* SeisViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeisViewController.swift; sourceTree = "<group>"; };
+		CA306BDB1C2AA451006CA09D /* SeteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeteViewController.swift; sourceTree = "<group>"; };
 		CA745BA21C0EFBDE0003F44A /* TresViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TresViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -121,6 +123,7 @@
 				CA0EEC8C1C1050990049C28A /* QuatroViewController.swift */,
 				ACE25A4B1C2811CC002CF450 /* CincoViewController.swift */,
 				CA306BD91C2A9F49006CA09D /* SeisViewController.swift */,
+				CA306BDB1C2AA451006CA09D /* SeteViewController.swift */,
 			);
 			path = "ios-estudosGerais";
 			sourceTree = "<group>";
@@ -278,6 +281,7 @@
 				CA306BDA1C2A9F49006CA09D /* SeisViewController.swift in Sources */,
 				CA745BA31C0EFBDE0003F44A /* TresViewController.swift in Sources */,
 				ACE25A4C1C2811CC002CF450 /* CincoViewController.swift in Sources */,
+				CA306BDC1C2AA451006CA09D /* SeteViewController.swift in Sources */,
 				CA1979961C0D9FC400AEF4B9 /* ViewController.swift in Sources */,
 				CA0EEC8D1C1050990049C28A /* QuatroViewController.swift in Sources */,
 				CA1979941C0D9FC400AEF4B9 /* AppDelegate.swift in Sources */,

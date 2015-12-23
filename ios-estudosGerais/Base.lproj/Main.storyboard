@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="clq-X7-jm1">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Iq7-kd-hjN">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
@@ -350,6 +350,67 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J3g-ot-t9y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="131" y="3513"/>
+        </scene>
+        <!--Sete-->
+        <scene sceneID="UdE-Jo-iUt">
+            <objects>
+                <viewController title="Sete" id="Iq7-kd-hjN" customClass="SeteViewController" customModule="ios_estudosGerais" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3WR-wt-fpk"/>
+                        <viewControllerLayoutGuide type="bottom" id="wg0-ZO-nxm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Osy-e0-d4q">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <slider opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.050000000000000003" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="fcz-vg-vLa">
+                                <rect key="frame" x="18" y="20" width="284" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="KzX-CE-gfX"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="changeSlider:" destination="Iq7-kd-hjN" eventType="valueChanged" id="5CX-2m-iBd"/>
+                                </connections>
+                            </slider>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="fD1-qV-0vn">
+                                <rect key="frame" x="20" y="58" width="280" height="490"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="0H0-I1-Qu2">
+                                        <rect key="frame" x="0.0" y="28" width="280" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0H0-I1-Qu2" id="MAO-rE-wTv">
+                                            <rect key="frame" x="0.0" y="0.0" width="280" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="Iq7-kd-hjN" id="Zt1-6N-A2S"/>
+                                    <outlet property="delegate" destination="Iq7-kd-hjN" id="OnG-NX-WvH"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="fcz-vg-vLa" firstAttribute="leading" secondItem="Osy-e0-d4q" secondAttribute="leadingMargin" id="4zi-4P-io3"/>
+                            <constraint firstItem="fcz-vg-vLa" firstAttribute="top" secondItem="3WR-wt-fpk" secondAttribute="bottom" id="E8l-Cq-w9g"/>
+                            <constraint firstItem="wg0-ZO-nxm" firstAttribute="top" secondItem="fD1-qV-0vn" secondAttribute="bottom" id="cBf-Y5-LbE"/>
+                            <constraint firstItem="fD1-qV-0vn" firstAttribute="top" secondItem="fcz-vg-vLa" secondAttribute="bottom" constant="8" id="lQl-yi-VsV"/>
+                            <constraint firstItem="fD1-qV-0vn" firstAttribute="leading" secondItem="Osy-e0-d4q" secondAttribute="leadingMargin" id="mIu-jt-Qhq"/>
+                            <constraint firstItem="fD1-qV-0vn" firstAttribute="trailing" secondItem="Osy-e0-d4q" secondAttribute="trailingMargin" id="qgl-dQ-ZZg"/>
+                            <constraint firstItem="fcz-vg-vLa" firstAttribute="trailing" secondItem="Osy-e0-d4q" secondAttribute="trailingMargin" id="t2Y-ff-msL"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="slider" destination="fcz-vg-vLa" id="cEk-nw-z3l"/>
+                        <outlet property="tableview" destination="fD1-qV-0vn" id="Sbf-H5-WdO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wB5-cJ-cqh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131" y="4147"/>
         </scene>
     </scenes>
     <resources>
