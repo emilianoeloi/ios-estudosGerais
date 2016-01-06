@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		AC22084F1C3A7E2A00D33A52 /* NoveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC22084E1C3A7E2A00D33A52 /* NoveViewController.swift */; };
+		ACAA64741C3D23D90096A21C /* DezViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAA64731C3D23D90096A21C /* DezViewController.swift */; };
+		ACAA64761C3D24050096A21C /* OnzeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAA64751C3D24050096A21C /* OnzeViewController.swift */; };
 		ACE25A4C1C2811CC002CF450 /* CincoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE25A4B1C2811CC002CF450 /* CincoViewController.swift */; };
 		CA0EEC8D1C1050990049C28A /* QuatroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0EEC8C1C1050990049C28A /* QuatroViewController.swift */; };
 		CA1979941C0D9FC400AEF4B9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1979931C0D9FC400AEF4B9 /* AppDelegate.swift */; };
@@ -44,6 +46,8 @@
 
 /* Begin PBXFileReference section */
 		AC22084E1C3A7E2A00D33A52 /* NoveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoveViewController.swift; sourceTree = "<group>"; };
+		ACAA64731C3D23D90096A21C /* DezViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DezViewController.swift; sourceTree = "<group>"; };
+		ACAA64751C3D24050096A21C /* OnzeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnzeViewController.swift; sourceTree = "<group>"; };
 		ACE25A4B1C2811CC002CF450 /* CincoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CincoViewController.swift; sourceTree = "<group>"; };
 		CA0EEC8C1C1050990049C28A /* QuatroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuatroViewController.swift; sourceTree = "<group>"; };
 		CA1979901C0D9FC400AEF4B9 /* ios-estudosGerais.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-estudosGerais.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -130,6 +134,8 @@
 				CA306BDB1C2AA451006CA09D /* SeteViewController.swift */,
 				CA306BDD1C2AA83C006CA09D /* OitoViewController.swift */,
 				AC22084E1C3A7E2A00D33A52 /* NoveViewController.swift */,
+				ACAA64731C3D23D90096A21C /* DezViewController.swift */,
+				ACAA64751C3D24050096A21C /* OnzeViewController.swift */,
 			);
 			path = "ios-estudosGerais";
 			sourceTree = "<group>";
@@ -286,6 +292,7 @@
 			files = (
 				CA306BDA1C2A9F49006CA09D /* SeisViewController.swift in Sources */,
 				CA745BA31C0EFBDE0003F44A /* TresViewController.swift in Sources */,
+				ACAA64761C3D24050096A21C /* OnzeViewController.swift in Sources */,
 				AC22084F1C3A7E2A00D33A52 /* NoveViewController.swift in Sources */,
 				ACE25A4C1C2811CC002CF450 /* CincoViewController.swift in Sources */,
 				CA306BDC1C2AA451006CA09D /* SeteViewController.swift in Sources */,
@@ -294,6 +301,7 @@
 				CA1979941C0D9FC400AEF4B9 /* AppDelegate.swift in Sources */,
 				CA1979C41C0DA6B000AEF4B9 /* DoisViewController.swift in Sources */,
 				CA306BDE1C2AA83C006CA09D /* OitoViewController.swift in Sources */,
+				ACAA64741C3D23D90096A21C /* DezViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
