@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Pbs-2l-NZF">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="IOZ-gP-ud8">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -430,6 +430,60 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vcF-u7-QiM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="131" y="4788"/>
+        </scene>
+        <!--Nove View Controller-->
+        <scene sceneID="1Cc-Sb-ffb">
+            <objects>
+                <viewController id="IOZ-gP-ud8" customClass="NoveViewController" customModule="ios_estudosGerais" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="D5U-BH-qHh"/>
+                        <viewControllerLayoutGuide type="bottom" id="KYi-BI-jRm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="eYD-9H-DxO">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="222-ay-hvM">
+                                <rect key="frame" x="20" y="68" width="280" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X2B-mS-WcZ">
+                                <rect key="frame" x="143" y="128" width="46" height="30"/>
+                                <state key="normal" title="Buscar"/>
+                                <connections>
+                                    <action selector="buscar:" destination="IOZ-gP-ud8" eventType="touchUpInside" id="nmv-B0-zYj"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U6D-Fb-q3O">
+                                <rect key="frame" x="139" y="490" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="222-ay-hvM" firstAttribute="leading" secondItem="eYD-9H-DxO" secondAttribute="leadingMargin" id="5s7-TF-gNc"/>
+                            <constraint firstItem="KYi-BI-jRm" firstAttribute="top" secondItem="U6D-Fb-q3O" secondAttribute="bottom" id="BEg-Xw-5sd"/>
+                            <constraint firstItem="U6D-Fb-q3O" firstAttribute="leading" secondItem="eYD-9H-DxO" secondAttribute="leadingMargin" id="IOf-dF-LWl"/>
+                            <constraint firstItem="222-ay-hvM" firstAttribute="trailing" secondItem="eYD-9H-DxO" secondAttribute="trailingMargin" id="KuD-tv-tHg"/>
+                            <constraint firstItem="222-ay-hvM" firstAttribute="top" secondItem="D5U-BH-qHh" secondAttribute="bottom" constant="50" id="PIj-R9-FaP"/>
+                            <constraint firstItem="X2B-mS-WcZ" firstAttribute="centerX" secondItem="222-ay-hvM" secondAttribute="centerX" id="UZT-nJ-uTA"/>
+                            <constraint firstItem="X2B-mS-WcZ" firstAttribute="top" secondItem="222-ay-hvM" secondAttribute="bottom" constant="30" id="ZBh-PY-mwP"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="U6D-Fb-q3O" secondAttribute="trailing" id="c0h-b3-eNm"/>
+                            <constraint firstItem="222-ay-hvM" firstAttribute="centerX" secondItem="eYD-9H-DxO" secondAttribute="centerX" id="uaI-fs-tbV"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="label" destination="U6D-Fb-q3O" id="XiH-Tq-pQD"/>
+                        <outlet property="textbox" destination="222-ay-hvM" id="cW8-xT-p2N"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o6l-OZ-mmS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131" y="5428"/>
         </scene>
     </scenes>
     <resources>
