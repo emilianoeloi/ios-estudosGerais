@@ -21,7 +21,7 @@ class TrezeViewController : UIViewController, UITextFieldDelegate{
     }
     @IBAction func searchWeather(sender: AnyObject) {
         
-        let url = NSURL(string: "http://www.weather-forecast.com/locations/{cityName}/forecasts/latest".stringByReplacingOccurrencesOfString("{cityName}", withString: cityName.text!))
+        let url = NSURL(string: "http://www.weather-forecast.com/locations/{cityName}/forecasts/latest".stringByReplacingOccurrencesOfString("{cityName}", withString: cityName.text!).stringByReplacingOccurrencesOfString(" ", withString: "-"))
         
         let task = NSURLSession.sharedSession().dataTaskWithURL(url!) { (data, response, error) -> Void in
             if let content = data {

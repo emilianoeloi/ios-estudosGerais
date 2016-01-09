@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="QAt-Q6-gOt">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Ypr-7d-caW">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
@@ -726,8 +726,54 @@
             </objects>
             <point key="canvasLocation" x="137" y="7704"/>
         </scene>
+        <!--Quatorze-->
+        <scene sceneID="joi-5N-3gh">
+            <objects>
+                <viewController title="Quatorze" id="Ypr-7d-caW" customClass="QuatorzeViewController" customModule="ios_estudosGerais" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="BbM-Qp-Ctj"/>
+                        <viewControllerLayoutGuide type="bottom" id="4W4-Rs-Lyf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yaJ-q9-kDV">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LLaP_1" translatesAutoresizingMaskIntoConstraints="NO" id="Zem-Nd-347">
+                                <rect key="frame" x="25" y="149" width="270" height="270"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="270" id="9zv-5C-DnY"/>
+                                    <constraint firstAttribute="width" constant="270" id="rHM-pw-JJi"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="flN-4e-j3c">
+                                <rect key="frame" x="101" y="63" width="119" height="30"/>
+                                <state key="normal" title="Atualizar Imagem"/>
+                                <connections>
+                                    <action selector="updateImage:" destination="Ypr-7d-caW" eventType="touchUpInside" id="rAS-rj-5FL"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Zem-Nd-347" firstAttribute="centerX" secondItem="yaJ-q9-kDV" secondAttribute="centerX" id="Af5-AR-3gd"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="flN-4e-j3c" secondAttribute="trailing" id="AoF-wv-KP3"/>
+                            <constraint firstItem="flN-4e-j3c" firstAttribute="leading" secondItem="yaJ-q9-kDV" secondAttribute="leadingMargin" id="gMs-cM-HoW"/>
+                            <constraint firstItem="Zem-Nd-347" firstAttribute="top" secondItem="flN-4e-j3c" secondAttribute="bottom" constant="56" id="xW0-ow-JiZ"/>
+                            <constraint firstItem="Zem-Nd-347" firstAttribute="centerY" secondItem="yaJ-q9-kDV" secondAttribute="centerY" id="zfm-c6-gsk"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="image" destination="Zem-Nd-347" id="ygo-WB-Sg6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DED-A9-j65" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137" y="8353"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="LLaP_1" width="270" height="270"/>
         <image name="cat.jpg" width="1600" height="1200"/>
         <image name="clima-de-altitude-caracteristicas-gerais-2" width="1024" height="768"/>
     </resources>
