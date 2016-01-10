@@ -12,14 +12,21 @@
 
 import UIKit
 import MapKit
+import CoreLocation
 
-class DezesseisViewController : UIViewController , MKMapViewDelegate {
+class DezesseisViewController : UIViewController , MKMapViewDelegate, CLLocationManagerDelegate {
     
     
     @IBOutlet weak var map: MKMapView!
+    var locationManager = CLLocationManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        locationManager.delegate = self
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        locationManager.requestWhenInUseAuthorization()
+        locationManager.startUpdatingLocation()
         
         var latitude:CLLocationDegrees = 35.898553
         var longitude:CLLocationDegrees = 14.4279513
@@ -74,8 +81,16 @@ class DezesseisViewController : UIViewController , MKMapViewDelegate {
         
     }
     
+    func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]){
+        var userLocation:CLLocation = locations[0] as! CLLocation
+        goTo(userLocation.coordinate.latitude, lng: userLocation.coordinate.longitude)
+        
+    }
+    
     @IBAction func goToLocation(sender: AnyObject) {
         goTo(0, lng: 0)
     }
+    
+    
     
 }
