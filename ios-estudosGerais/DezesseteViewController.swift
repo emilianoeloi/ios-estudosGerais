@@ -10,9 +10,9 @@ import UIKit
 import MapKit
 import CoreLocation
 
+var rowCounter = 0
+
 class DezesseteViewController : UIViewController , MKMapViewDelegate, CLLocationManagerDelegate {
-    
-    var onceAnnotation : Bool = false
     
     @IBOutlet weak var map: MKMapView!
     @IBOutlet weak var latLabel: UILabel!
@@ -21,6 +21,9 @@ class DezesseteViewController : UIViewController , MKMapViewDelegate, CLLocation
     @IBOutlet weak var altitudeLabel: UILabel!
     @IBOutlet weak var speedLabel: UILabel!
     @IBOutlet weak var addressLabel: UILabel!
+    
+    var lastLocation :CLLocation!
+    var lastAddress :String!
     
     var locationManager :CLLocationManager!
     
@@ -43,6 +46,7 @@ class DezesseteViewController : UIViewController , MKMapViewDelegate, CLLocation
         self.map.setRegion(region, animated: true)
         
         let annotation = MKPointAnnotation()
+        annotation.coordinate = location
         annotation.title = annotationTitle
         annotation.subtitle = "- - - - -"
         
@@ -50,7 +54,9 @@ class DezesseteViewController : UIViewController , MKMapViewDelegate, CLLocation
         
     }
     
-    
+    @IBAction func showInApp(sender: AnyObject) {
+        goTo(lastAddress, lat: lastLocation.coordinate.latitude, lng: lastLocation.coordinate.longitude)
+    }
     
     func setupLocationManager() {
         locationManager = CLLocationManager()
@@ -68,15 +74,14 @@ class DezesseteViewController : UIViewController , MKMapViewDelegate, CLLocation
         altitudeLabel.text = "\(loc.altitude)"
         speedLabel.text = "\(loc.speed)"
         
+        lastLocation = loc
+        
         CLGeocoder().reverseGeocodeLocation(loc) { (placemarks, error) -> Void in
             if error == nil {
                 let placemark = placemarks?[0]
                 let place = CLPlacemark(placemark: placemark!)
                 self.addressLabel.text = "\(place.name)"
-                if !self.onceAnnotation {
-                    self.goTo(place.name!, lat: loc.coordinate.latitude, lng: loc.coordinate.longitude)
-                    self.onceAnnotation = true
-                }
+                self.lastAddress = "\(place.name)"
                 
             }
         }

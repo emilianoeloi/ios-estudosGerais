@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC1CCBAB1C44863C004F0DE3 /* DezoitoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1CCBAA1C44863B004F0DE3 /* DezoitoViewController.swift */; };
 		AC22084F1C3A7E2A00D33A52 /* NoveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC22084E1C3A7E2A00D33A52 /* NoveViewController.swift */; };
 		AC319BA91C4180E0003B681C /* DozeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC319BA81C4180E0003B681C /* DozeViewController.swift */; };
 		AC319BAB1C4189EE003B681C /* TrezeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC319BAA1C4189EE003B681C /* TrezeViewController.swift */; };
@@ -52,6 +53,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AC1CCBAA1C44863B004F0DE3 /* DezoitoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DezoitoViewController.swift; sourceTree = "<group>"; };
 		AC22084E1C3A7E2A00D33A52 /* NoveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoveViewController.swift; sourceTree = "<group>"; };
 		AC319BA81C4180E0003B681C /* DozeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DozeViewController.swift; sourceTree = "<group>"; };
 		AC319BAA1C4189EE003B681C /* TrezeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrezeViewController.swift; sourceTree = "<group>"; };
@@ -158,6 +160,7 @@
 				AC319BAE1C41A6D0003B681C /* QuinzeViewController.swift */,
 				AC319BB01C41B6DF003B681C /* DezesseisViewController.swift */,
 				AC319BB41C4296B2003B681C /* DezesseteViewController.swift */,
+				AC1CCBAA1C44863B004F0DE3 /* DezoitoViewController.swift */,
 			);
 			path = "ios-estudosGerais";
 			sourceTree = "<group>";
@@ -324,6 +327,7 @@
 				AC319BB11C41B6DF003B681C /* DezesseisViewController.swift in Sources */,
 				ACE25A4C1C2811CC002CF450 /* CincoViewController.swift in Sources */,
 				CA306BDC1C2AA451006CA09D /* SeteViewController.swift in Sources */,
+				AC1CCBAB1C44863C004F0DE3 /* DezoitoViewController.swift in Sources */,
 				CA1979961C0D9FC400AEF4B9 /* ViewController.swift in Sources */,
 				CA0EEC8D1C1050990049C28A /* QuatroViewController.swift in Sources */,
 				CA1979941C0D9FC400AEF4B9 /* AppDelegate.swift in Sources */,
