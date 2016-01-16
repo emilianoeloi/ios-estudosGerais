@@ -19,6 +19,8 @@
 		ACAA64741C3D23D90096A21C /* DezViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAA64731C3D23D90096A21C /* DezViewController.swift */; };
 		ACAA64761C3D24050096A21C /* OnzeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAA64751C3D24050096A21C /* OnzeViewController.swift */; };
 		ACE25A4C1C2811CC002CF450 /* CincoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE25A4B1C2811CC002CF450 /* CincoViewController.swift */; };
+		ACEDAD4B1C45D09700ADF3F4 /* DezenoveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEDAD4A1C45D09700ADF3F4 /* DezenoveViewController.swift */; };
+		ACEDAD4D1C45D0E000ADF3F4 /* VinteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEDAD4C1C45D0E000ADF3F4 /* VinteViewController.swift */; };
 		CA0EEC8D1C1050990049C28A /* QuatroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0EEC8C1C1050990049C28A /* QuatroViewController.swift */; };
 		CA1979941C0D9FC400AEF4B9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1979931C0D9FC400AEF4B9 /* AppDelegate.swift */; };
 		CA1979961C0D9FC400AEF4B9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1979951C0D9FC400AEF4B9 /* ViewController.swift */; };
@@ -65,6 +67,8 @@
 		ACAA64731C3D23D90096A21C /* DezViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DezViewController.swift; sourceTree = "<group>"; };
 		ACAA64751C3D24050096A21C /* OnzeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnzeViewController.swift; sourceTree = "<group>"; };
 		ACE25A4B1C2811CC002CF450 /* CincoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CincoViewController.swift; sourceTree = "<group>"; };
+		ACEDAD4A1C45D09700ADF3F4 /* DezenoveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DezenoveViewController.swift; sourceTree = "<group>"; };
+		ACEDAD4C1C45D0E000ADF3F4 /* VinteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VinteViewController.swift; sourceTree = "<group>"; };
 		CA0EEC8C1C1050990049C28A /* QuatroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuatroViewController.swift; sourceTree = "<group>"; };
 		CA1979901C0D9FC400AEF4B9 /* ios-estudosGerais.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-estudosGerais.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA1979931C0D9FC400AEF4B9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -161,6 +165,8 @@
 				AC319BB01C41B6DF003B681C /* DezesseisViewController.swift */,
 				AC319BB41C4296B2003B681C /* DezesseteViewController.swift */,
 				AC1CCBAA1C44863B004F0DE3 /* DezoitoViewController.swift */,
+				ACEDAD4A1C45D09700ADF3F4 /* DezenoveViewController.swift */,
+				ACEDAD4C1C45D0E000ADF3F4 /* VinteViewController.swift */,
 			);
 			path = "ios-estudosGerais";
 			sourceTree = "<group>";
@@ -326,9 +332,11 @@
 				AC319BAD1C41964E003B681C /* QuatorzeViewController.swift in Sources */,
 				AC319BB11C41B6DF003B681C /* DezesseisViewController.swift in Sources */,
 				ACE25A4C1C2811CC002CF450 /* CincoViewController.swift in Sources */,
+				ACEDAD4D1C45D0E000ADF3F4 /* VinteViewController.swift in Sources */,
 				CA306BDC1C2AA451006CA09D /* SeteViewController.swift in Sources */,
 				AC1CCBAB1C44863C004F0DE3 /* DezoitoViewController.swift in Sources */,
 				CA1979961C0D9FC400AEF4B9 /* ViewController.swift in Sources */,
+				ACEDAD4B1C45D09700ADF3F4 /* DezenoveViewController.swift in Sources */,
 				CA0EEC8D1C1050990049C28A /* QuatroViewController.swift in Sources */,
 				CA1979941C0D9FC400AEF4B9 /* AppDelegate.swift in Sources */,
 				CA1979C41C0DA6B000AEF4B9 /* DoisViewController.swift in Sources */,

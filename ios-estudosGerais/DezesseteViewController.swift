@@ -33,6 +33,10 @@ class DezesseteViewController : UIViewController , MKMapViewDelegate, CLLocation
         
     }
     
+    func goToLastLocation(annotationTitle:String){
+        goTo(annotationTitle, lat: lastLocation.coordinate.latitude, lng: lastLocation.coordinate.longitude)
+    }
+    
     func goTo(annotationTitle:String, lat:CLLocationDegrees, lng:CLLocationDegrees){
         let latDelta:CLLocationDegrees = 0.01
         let lngDelta:CLLocationDegrees = 0.01
@@ -48,7 +52,7 @@ class DezesseteViewController : UIViewController , MKMapViewDelegate, CLLocation
         let annotation = MKPointAnnotation()
         annotation.coordinate = location
         annotation.title = annotationTitle
-        annotation.subtitle = "- - - - -"
+        annotation.subtitle = "\(lat), \(lng)"
         
         self.map.addAnnotation(annotation)
         
@@ -82,7 +86,9 @@ class DezesseteViewController : UIViewController , MKMapViewDelegate, CLLocation
                 let place = CLPlacemark(placemark: placemark!)
                 self.addressLabel.text = "\(place.name)"
                 self.lastAddress = "\(place.name)"
-                
+                self.goToLastLocation(place.name!)
+            }else{
+                self.goToLastLocation("no name")
             }
         }
         
